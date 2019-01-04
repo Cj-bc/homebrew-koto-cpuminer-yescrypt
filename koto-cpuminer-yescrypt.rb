@@ -1,6 +1,6 @@
 require "formula"
 
-class KotoCpuminerYescript < Formula
+class KotoCpuminerYescrypt < Formula
   desc "CPU miner for Koto"
   homepage "https://github.com/KotoDevelopers/cpuminer-yescrypt"
   version "3.1"
