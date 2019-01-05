@@ -19,6 +19,9 @@ class KotoCpuminerYescrypt < Formula
     system "./nomacro.pl"
     system "./configure CFLAGS='-O3'"
     system "make"
+    
+    system "mv", "minerd", "koto-minerd"
+    bin.install "koto-minerd"
   end
 end
 
