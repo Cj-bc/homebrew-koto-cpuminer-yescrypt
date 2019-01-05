@@ -10,6 +10,7 @@ class KotoCpuminerYescrypt < Formula
   patch :DATA
   depends_on "autoconf" => [:build, "2.57"]
   depends_on "automake" => [:build, "1.7"]
+  depends_on "curl" => :build
 
   def install
     mkdir "m4"
