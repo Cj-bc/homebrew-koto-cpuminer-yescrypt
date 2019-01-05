@@ -12,6 +12,8 @@ class KotoCpuminerYescrypt < Formula
   depends_on "automake" => [:build, "1.7"]
 
   def install
+    mkdir "m4"
+    system "cp #{HOMEBREW_PREFIX}/Cellar/curl/$(curl --version | head -n 1 | awk '{print $2}')/share/aclocal/libcurl.m4 m4/"
     system "./autogen.sh"
     system "./nomacro.pl"
     system "./configure CFLAGS='-3'"
