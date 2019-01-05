@@ -17,7 +17,7 @@ class KotoCpuminerYescrypt < Formula
     system "cp #{HOMEBREW_PREFIX}/Cellar/curl/$(curl --version | head -n 1 | awk '{print $2}')/share/aclocal/libcurl.m4 m4/"
     system "./autogen.sh"
     system "./nomacro.pl"
-    system "./configure CFLAGS='-3'"
+    system "./configure CFLAGS='-O3'"
     system "make"
   end
 end
