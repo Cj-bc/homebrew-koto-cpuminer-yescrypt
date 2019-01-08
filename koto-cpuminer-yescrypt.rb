@@ -3,9 +3,9 @@ require "formula"
 class KotoCpuminerYescrypt < Formula
   desc "CPU miner for Koto"
   homepage "https://github.com/KotoDevelopers/cpuminer-yescrypt"
-  version "3.1"
+  version "3.2"
   url "https://github.com/KotoDevelopers/cpuminer-yescrypt/archive/v#{version}.tar.gz"
-  sha256 "f757ae324aacdf8ca281d9ee8de5dc3dc0e94c0efca364ea6757c27260d4da95"
+  sha256 "8916d407f7b1cca2b0c7bceccf1b3f27d05f8ee33f3cdf20b14f73257d85d375"
 
   patch :DATA
   depends_on "autoconf" => [:build, "2.57"]
