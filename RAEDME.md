@@ -1,5 +1,10 @@
 # this is unofficial homebrew formula for koto-cpuminer
 
+**Available only for macOS for now**
+
+This formula patches for macOS build.
+I'll try to make it available in linuxbrew someday.
+
 ## usage(for now)
 
 ```bash
