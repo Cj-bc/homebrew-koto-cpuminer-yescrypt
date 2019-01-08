@@ -14,7 +14,7 @@ class KotoCpuminerYescrypt < Formula
 
   def install
     mkdir "m4"
-    system "cp #{HOMEBREW_PREFIX}/Cellar/curl/$(curl --version | head -n 1 | cut -f 2 -d " ")/share/aclocal/libcurl.m4 m4/"
+    system "cp #{HOMEBREW_PREFIX}/Cellar/curl/$(curl --version | head -n 1 | cut -f 2 -d ' ')/share/aclocal/libcurl.m4 m4/"
     system "./autogen.sh"
     system "./nomacro.pl"
     system "./configure CFLAGS='-O3'"
