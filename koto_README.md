@@ -1,4 +1,4 @@
-日本語: [JA_README.md](JA_README.md)
+日本語: [koto_JA_README.md](koto_JA_README.md)
 
 ---
 
