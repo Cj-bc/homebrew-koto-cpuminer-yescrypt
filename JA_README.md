@@ -17,4 +17,4 @@ $ brew install koto-cpuminer-yescript
 
 # 利用可能なminers
 
-  * [KotoDevelopers/cpuminer-yescrypt](https://github.com/KotoDevelopers/cpuminer-yescrypt)
+  * [KotoDevelopers/cpuminer-yescrypt](https://github.com/KotoDevelopers/cpuminer-yescrypt)  -- [koto_JA_README.md](koto_JA_README.md)

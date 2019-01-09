@@ -18,4 +18,4 @@ $ brew install koto-cpuminer-yescript
 
 # available miners
 
-  * [KotoDevelopers/cpuminer-yescrypt](https://github.com/KotoDevelopers/cpuminer-yescrypt)
+  * [KotoDevelopers/cpuminer-yescrypt](https://github.com/KotoDevelopers/cpuminer-yescrypt) -- [koto_README.md](koto_README.md)
