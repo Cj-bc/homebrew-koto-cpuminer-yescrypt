@@ -1,11 +1,16 @@
-# this is unofficial homebrew formula for koto-cpuminer
+日本語: [JA_README.md](JA_README.md)
+
+---
 
 **Available only for macOS for now**
 
 This formula patches for macOS build.
-I'll try to make it available in linuxbrew someday.
+I'll make it available in linuxbrew someday.
 
-## usage(for now)
+
+# this is unofficial homebrew formula for koto-cpuminer
+
+## installation
 
 ```bash
 $ brew tap cj-bc/koto-cpuminer-yescrypt
@@ -14,7 +19,9 @@ $ # or
 $ brew install Cj-bc/koto-cpuminer-yescrypt/koto-cpuminer-yescrypt
 ```
 
-:Note: *executabe will be installed as "koto-miner"*
+## Differs from official miner
+
+Note: *executabe will be installed as "koto-miner"*
 So, please don't execute like:
 
 ```bash
@@ -24,5 +31,5 @@ So, please don't execute like:
 But do this:
 
 ```bash
-$ koto-miner -
+$ koto-miner ~
 ```
