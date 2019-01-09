@@ -13,10 +13,10 @@ I'll make it available in linuxbrew someday.
 ## installation
 
 ```bash
-$ brew tap cj-bc/koto-cpuminer-yescrypt
+$ brew tap cj-bc/miners
 $ brew install koto-cpuminer-yescrypt
 $ # or
-$ brew install Cj-bc/koto-cpuminer-yescrypt/koto-cpuminer-yescrypt
+$ brew install Cj-bc/miners/koto-cpuminer-yescrypt
 ```
 
 ## Differs from official miner

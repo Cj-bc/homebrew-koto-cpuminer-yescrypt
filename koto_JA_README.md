@@ -12,10 +12,10 @@ English: [README.md](README.md)
 # Installation
 
 ```bash
-$ brew tap cj-bc/koto-cpuminer-yescrypt
+$ brew tap cj-bc/miners
 $ brew install koto-cpuminer-yescrypt
 $ # or
-$ brew install Cj-bc/koto-cpuminer-yescrypt/koto-cpuminer-yescrypt
+$ brew install Cj-bc/miners/koto-cpuminer-yescrypt
 ```
 
 # 公式のインストール方法との違い
