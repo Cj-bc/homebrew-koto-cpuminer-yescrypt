@@ -7,16 +7,18 @@ class KotoCpuminerYescrypt < Formula
   url "https://github.com/KotoDevelopers/cpuminer-yescrypt/archive/v#{version}.tar.gz"
   sha256 "8916d407f7b1cca2b0c7bceccf1b3f27d05f8ee33f3cdf20b14f73257d85d375"
 
-  patch :DATA
+  patch :DATA if OS.mac?
   depends_on "autoconf" => [:build, "2.57"]
   depends_on "automake" => [:build, "1.7"]
   depends_on "curl" => :build
 
   def install
-    mkdir "m4"
-    system "cp #{HOMEBREW_PREFIX}/Cellar/curl/$(curl --version | head -n 1 | cut -f 2 -d ' ')/share/aclocal/libcurl.m4 m4/"
     system "./autogen.sh"
-    system "./nomacro.pl"
+    if OS.mac?
+      mkdir "m4"
+      system "cp #{HOMEBREW_PREFIX}/Cellar/curl/$(curl --version | head -n 1 | cut -f 2 -d ' ')/share/aclocal/libcurl.m4 m4/"
+      system "./nomacro.pl"
+    end
     system "./configure CFLAGS='-O3'"
     system "make"
     
