@@ -16,7 +16,7 @@ class MonacoinCpuminerMulti < Formula
     system "./autogen.sh"
     system "./nomacro.pl"
     system "./configure CFLAGS='-march=native' --with-crypto=/usr/local/opt/openssl --with-curl"
-    inreplace algo/neoscrypt.c, "#if \(WINDOWS\)", "#define ASM 0\n#if (WINDOWS)"
+    inreplace "algo/neoscrypt.c", "#if \(WINDOWS\)", "#define ASM 0\n#if (WINDOWS)"
     system "make"
   end
 end
