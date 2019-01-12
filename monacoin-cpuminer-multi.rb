@@ -18,5 +18,8 @@ class MonacoinCpuminerMulti < Formula
     system "./configure CFLAGS='-march=native' --with-crypto=/usr/local/opt/openssl --with-curl"
     inreplace "algo/neoscrypt.c", "#if \(WINDOWS\)", "#define ASM 0\n#if (WINDOWS)"
     system "make"
+
+    system "mv", "cpuminer", "mona-cpuminer"
+    bin.install "mona-cpuminer"
   end
 end
