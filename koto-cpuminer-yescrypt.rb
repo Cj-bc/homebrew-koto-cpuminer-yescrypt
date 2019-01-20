@@ -3,8 +3,8 @@ require "formula"
 class KotoCpuminerYescrypt < Formula
   desc "CPU miner for Koto"
   homepage "https://github.com/KotoDevelopers/cpuminer-yescrypt"
-  version "3.2"
   url "https://github.com/KotoDevelopers/cpuminer-yescrypt/archive/v#{version}.tar.gz"
+  version "3.2"
   sha256 "8916d407f7b1cca2b0c7bceccf1b3f27d05f8ee33f3cdf20b14f73257d85d375"
 
   patch :DATA if OS.mac?
@@ -23,6 +23,10 @@ class KotoCpuminerYescrypt < Formula
     system "make"
     mv "minerd", "koto-minerd"
     bin.install "koto-minerd"
+  end
+
+  test do
+    true
   end
 end
 
