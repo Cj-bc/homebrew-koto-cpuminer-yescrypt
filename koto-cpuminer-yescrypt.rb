@@ -21,8 +21,7 @@ class KotoCpuminerYescrypt < Formula
     end
     system "./configure CFLAGS='-O3'"
     system "make"
-    
-    system "mv", "minerd", "koto-minerd"
+    mv "minerd", "koto-minerd"
     bin.install "koto-minerd"
   end
 end
