@@ -2,9 +2,9 @@ English: [koto_README.md](koto_README.md)
 
 ---
 
-**現在macのみ対応しています**
-これは、macでのビルドの際に必要なパッチを常時当てる設定にしているのが原因です。
-そのうちOSによる切り替えもしますが、現状linuxbrewでは動きません。(未検証)
+*Linux環境にも対応しました* (多分)
+ただし **未検証です**
+もしlinux環境で正常にインストールできましたら、issue等で報告いただけると嬉しいです。
 
 
 # KotoDevelopers/cpuminer-yescryptの非公式homebrew formulaです

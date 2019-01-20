@@ -2,11 +2,9 @@
 
 ---
 
-**Available only for macOS for now**
-
-This formula patches for macOS build.
-I'll make it available in linuxbrew someday.
-
+**support linux for now!** maybe.
+But, **This ISN'T TESTED** so be careful
+If you succeed to install in linux, let me know by making issue, etc.
 
 # this is unofficial homebrew formula for koto-cpuminer
 
